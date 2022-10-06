@@ -1,0 +1,28 @@
+.NavItem {
+    display: inline-block;
+    margin: 0 0.5rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-family: sans-serif;
+    color: var(--pop);
+    background-image: url('../../assets/cassette.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    block-size: 100%;
+}   
+
+
+    .NavItem:hover {
+    box-shadow: 2px 2px 2px 2px var(--dark);
+
+
+
+    }
+
+    a {
+    text-decoration: none;
+    color: var(--pop);
+    }

@@ -4,4 +4,6 @@
     top: 0;
     background-color: var(--blue-one);
     color: var(--dark);
+    border-radius: 5px;
+    height: 20vh;
 }

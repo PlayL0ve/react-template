@@ -1,13 +1,13 @@
-import { NavLink } from 'react-router-dom';
 import styles from './Navigation.css';
+import NavItem from './NavItem';
 
 export default function Navigation() {
   return (
     <nav className={styles.Navigation}>
-      <NavLink to="/">Home </NavLink>
-      <NavLink to="/books">Books </NavLink>
-      <NavLink to="/games">Games </NavLink>
-      <NavLink to="/form">Form </NavLink>
+      <NavItem to="/">Home </NavItem>
+      <NavItem to="/books">Books </NavItem>
+      <NavItem to="/games">Games </NavItem>
+      <NavItem to="/form">Form </NavItem>
     </nav>
   );
 }
