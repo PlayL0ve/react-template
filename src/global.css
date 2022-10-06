@@ -1,0 +1,20 @@
+:root {
+    --blue-one: #a1d2ce;
+    --blue-two: #62a8ac;
+    --leather: #4c4c47;
+    --dark: #2d2d2a;
+    --pop: #c14953;
+
+    --main-font: 'Roboto', sans-serif;
+    --secondary-font: 'Roboto Condensed', sans-serif;
+
+    --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
+    0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+body {
+    font-family: var(--main-font);
+    background-color: var(--leather);
+    color: var(--blue-one);
+
+}
