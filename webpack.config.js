@@ -24,6 +24,9 @@ module.exports = {
   devServer: {
     port: 7891,
     historyApiFallback: true,
+    proxy: {
+      '/api': 'http://localhost:3000',
+    }
   },
   plugins: [
     new HtmlPlugin({ template: './src/index.html' }),
@@ -34,9 +37,13 @@ module.exports = {
     }),
     new webpack.ProvidePlugin({
       React: 'react',
+      process: 'process/browser',
     }),
   ],
   resolve: {
+    alias: {
+      process: 'process/browser',
+    },
     extensions: ['.js', '.jsx'],
   },
   module: {
