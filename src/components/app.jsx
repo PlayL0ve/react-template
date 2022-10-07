@@ -6,7 +6,7 @@ import {
 import Home from './Home/Home';
 import Layout from './Page/Layout';
 import Form from './Form/Form';
-import { UserProvider } from './state/UserContext';
+import { UserProvider } from './state/UserContext.jsx';
 
 export default function App() {
   return (

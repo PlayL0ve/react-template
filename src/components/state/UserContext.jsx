@@ -14,7 +14,7 @@ import {
   logOutUser,
   verifyUser,
   storeLocalUser,
-} from '../services/auth';
+} from '../../services/auth.js';
 
 const UserContext = createContext();
 
