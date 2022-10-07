@@ -2,19 +2,19 @@ import { del, get, post } from './request';
 
 const URL = '/api/v1/auth';
 
-export async function signUp(credentials) {
+export async function signUpUser(credentials) {
   const response = await post(`${URL}/signup`, credentials);
   response.user = response.data;
   return response;
 }
 
-export async function logIn(credentials) {
+export async function logInUser(credentials) {
   const response = await post(`${URL}/login`, credentials);
   response.user = response.data;
   return response;
 }
     
-export async function logOut() {
+export async function logOutUser() {
   return await del(`${URL}/logout`);
 }
 
